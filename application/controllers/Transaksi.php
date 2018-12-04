@@ -15,6 +15,7 @@ Class Transaksi extends CI_Controller{
         $this->db->where('status',0);
         $data['penjualan']=$this->db->get()->result();
         $this->template->load('template','penjualan/index',$data);
+
     }
 
     public function add()
