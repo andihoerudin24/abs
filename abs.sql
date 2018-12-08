@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2018 at 02:11 PM
+-- Generation Time: Dec 08, 2018 at 03:53 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -46,25 +46,6 @@ INSERT INTO `barang` (`kd_barang`, `nama_barang`, `harga_beli`, `harga_jual`, `s
 (3, 'Komputer', '1.000.000', '1.500.000', 40, '20%', 'keterangan oke update'),
 (4, 'laptop', '1.000.000', '15.000.000', 20, '20%', 'oke'),
 (5, 'Komputer laptop baru', '1.200.000', '1.500.000', 20, '30%', 'barang sangat bagus');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `login`
---
-
-CREATE TABLE `login` (
-  `id` int(11) NOT NULL,
-  `username` varchar(50) NOT NULL,
-  `password` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `login`
---
-
-INSERT INTO `login` (`id`, `username`, `password`) VALUES
-(1, 'andihoerudin', '22512e58749ffead12e90dbd59eddf24');
 
 -- --------------------------------------------------------
 
@@ -125,12 +106,6 @@ ALTER TABLE `barang`
   ADD PRIMARY KEY (`kd_barang`);
 
 --
--- Indexes for table `login`
---
-ALTER TABLE `login`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
@@ -153,12 +128,6 @@ ALTER TABLE `penjualan`
 --
 ALTER TABLE `barang`
   MODIFY `kd_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `login`
---
-ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `pelanggan`

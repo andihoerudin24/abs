@@ -4,7 +4,6 @@ Class Barang extends CI_Controller{
     function __construct() {
         parent::__construct();
         $this->load->Model('Model_barang');
-        chek_seesion();
     }
 
      public function index()
